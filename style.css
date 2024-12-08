@@ -86,3 +86,71 @@ form button{
     object-fit: cover;
     border-radius: 5px;
 }
+
+
+
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+        margin: 50px auto 20px;
+    }
+
+    form {
+        height: 60px;
+    }
+
+    form input {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    form button {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    #search-result {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+
+    #search-result img {
+        height: 200px;
+    }
+
+    #show-more-btn {
+        padding: 8px 16px;
+        margin: 20px auto 50px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    form button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #search-result {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    #search-result img {
+        height: 180px;
+    }
+}
